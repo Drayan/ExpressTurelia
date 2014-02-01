@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Le site officiel de la République de Turélia.">
+        <meta name="author" content="TurelianGov">
+
+        <title>République de Turélia</title>
+
+        <link rel="stylesheet" href="/linker/styles/bootstrap.css">
+        <link rel="stylesheet" href="/linker/styles/back_theme.css">
+
+        <!-- CDN to Fontawesome -->
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    </head>
+    <body data-spy="scroll" data-target=".sidebar">
+        <%- partial('partials/backHeader')%>
+
+        <%- body %>
+
+        <%- partial('partials/backFooter')%>
+
+        <!--SCRIPTS-->
+        <script src="/linker/js/socket.io.js"></script>
+        <script src="/linker/js/sails.io.js"></script>
+        <script src="/linker/js/app.js"></script>
+        <script src="/linker/js/jquery-1.11.0.js"></script>
+        <script src="/linker/js/bootstrap.js"></script>
+        <!--SCRIPTS END-->
+    </body>
+</html>
