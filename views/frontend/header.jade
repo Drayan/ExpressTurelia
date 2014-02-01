@@ -1,0 +1,35 @@
+nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
+    div.container
+        div.navbar-header
+            button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse")
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            a.navbar-brand(href="/") République de Turélia
+
+        div.collapse.navbar-collapse.navbar-right.navbar-ex1-collapse
+            ul.nav.navbar-nav
+                li
+                    a(href="/about") Présentation
+                li
+                    a(href="#") Citoyenneté
+                li
+                    a(href="#") Nouvelles
+
+                li.dropdown
+                    a.dropdown-toggle(href="#", data-toggle="dropdown") Connexion&nbsp;
+                        i.fa.fa-key.fa-fw
+                    ul.dropdown-menu(style="width: 250px;")
+                        li
+                            form.navbar-form(role="form", action="/user/login")
+                                div.form-group(style="margin-top: 10px;")
+                                    label(for="signinUsername") Nom d'utilisateur
+                                    input.form-control#signinUsername(type="text", name="username", placeholder="Username")
+                                div.form-group(style="margin-top: 10px;")
+                                    label(for="signinPassword") Mot de passe
+                                    input.form-control#signinPassword(type="password", name="password", placeholder="password")
+                                div.form-group.text-center(style="margin-top: 10px")
+                                    button.btn.btn-success(type="submit")
+                                        i.fa.fa-key.fa-fw
+                                        |&nbsp;Connexion
