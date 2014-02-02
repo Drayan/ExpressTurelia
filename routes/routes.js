@@ -9,7 +9,8 @@ exports.createRoutes = function(app) {
 
     app.get('/', routes.index);
     app.get('/player', routes.player);
-    app.get('/logout', routes.logout);
+    app.get('/logout', routes.user('logout'));
+    app.get('/user/create', routes.user('create'));
 
-    app.post('/login', routes.login);
+    app.post('/login', routes.user('login'));
 };

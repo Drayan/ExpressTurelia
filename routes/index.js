@@ -13,14 +13,12 @@ exports.index = function(req, res){
     }
 };
 
-exports.login = function(req, res) {
-    return controllers.callController('user', 'login', req, res);
-};
-
-exports.logout = function(req, res) {
-    return controllers.callController('user', 'logout', req, res);
-}
-
 exports.player = function(req, res) {
     return controllers.callController('player', 'index', req, res);
-}
+};
+
+exports.user = function(action) {
+    return function(req, res) {
+        return controllers.callController('user', action, req, res);
+    }
+};
