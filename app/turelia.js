@@ -17,6 +17,7 @@ exports.Initialize = function() {
 
 function configureEnvironment() {
     app.set('port', process.env.PORT || 3000);
+    app.set('host', process.env.HOST || '127.0.0.1');
     app.set('views', path.join(__dirname, '../views'));
     app.set('view engine', 'jade');
 
@@ -41,7 +42,7 @@ function prepareServer() {
 }
 
 function liftoffServer() {
-    http.createServer(app).listen(app.get('port'), function() {
-        console.log('Turelia server listening on port ' + app.get('port'));
+    http.createServer(app).listen(app.get('port'), app.get('host'), function() {
+        console.log('Turelia server listening ' + app.get('host') + ' on port ' + app.get('port'));
     })
 }

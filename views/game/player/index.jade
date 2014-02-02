@@ -1,0 +1,32 @@
+//
+   Created by Michaël on 2/02/14.
+extends ../layout
+
+block content
+    div#page-wrapper
+        div.row
+            div.col-lg-12
+                h1 Personnages
+                    small Aperçu
+                ol.breadcrumb
+                    li.active
+                        i.fa.fa-user
+                    | &nbsp;Personnages
+
+        div.row
+
+            div.col-lg-3
+                div.panel.panel-info
+                    div.panel-heading
+                        div.row
+                            div.col-xs-12.text-center
+                                h3 [CHARACTER 1]
+                        div.row
+                            div.col-xs-12.text-center
+                                img.avatar(src="/images/default-avatar.png", alt="default avatar")
+                    a(href="#")
+                        div.panel-footer.announcement-bottom
+                            div.row
+                                div.col-xs-6 Voir le profile
+                                div.col-xs-6.text-right
+                                    i.fa.fa-arrow-circle-right

@@ -22,7 +22,7 @@ nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
                         i.fa.fa-key.fa-fw
                     ul.dropdown-menu(style="width: 250px;")
                         li
-                            form.navbar-form(role="form", action="/user/login")
+                            form.navbar-form(role="form", action="/login", method="post")
                                 div.form-group(style="margin-top: 10px;")
                                     label(for="signinUsername") Nom d'utilisateur
                                     input.form-control#signinUsername(type="text", name="username", placeholder="Username")

@@ -1,0 +1,76 @@
+<div id="wrapper">
+nav.navbar.navbar-inverse.navbar-fixed-top(role="navigation")
+
+    div.navbar-header
+        button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse")
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        a.navbar-brand(href="/") République de Turélia
+
+    div.collapse.navbar-collapse.navbar-ex1-collapse
+        ul.nav.navbar-nav.side-nav
+            li.active
+                a(href="/")
+                    i.fa.fa-user
+                    | &nbsp; Personnages
+
+        ul.nav.navbar-nav.navbar-right.navbar-user
+            //Player messages dropdown
+            li.dropdown.message-dropdown
+                a.dropdown-toggle(href="#", data-toggle="dropdown")
+                    i.fa.fa-envelope
+                    | &nbsp; Messages &nbsp;
+                    span.badge 7
+                    b.caret
+                ul.dropdown-menu
+                    li.dropdown-header 7 Nouveaux Messages
+                    li.message-preview
+                        a(href="#")
+                            span.avatar
+                                img(src="/images/default-avatar.png", height="50", width="50")
+                            span.name [USERNAME]
+                            span.message [MESSAGE]
+                            span.time
+                                i.fa.fa-clock-o
+                                | &nbsp; 16:34
+
+                    li.divider
+
+                    li.message-preview
+                        a(href="#")
+                            span.avatar
+                                img(src="/images/default-avatar.png", height="50", width="50")
+                            span.name [USERNAME]
+                            span.message [MESSAGE]
+                            span.time
+                                i.fa.fa-clock-o
+                                | &nbsp; 16;34
+
+                    li.divider
+
+                    li
+                        a(href="#") Voir votre boite de réception &nbsp;
+                            span.badge.text-right 7
+
+            li.dropdown.user-dopdown
+                a.dropdown-toggle(href="#", data-toggle="dropdown")
+                    i.fa.fa-user
+                    | &nbsp [USER] &nbsp
+                    b.caret
+                ul.dropdown-menu
+                    li
+                        a(href="#")
+                            i.fa.fa-user
+                            | &nbsp; Profile
+                    li
+                        a(href="#")
+                            i.fa.fa-envelope
+                            | &nbsp; Boite de réception &nbsp
+                            span.badge 7
+                    li.divider
+                    li
+                        a(href="/logout")
+                            i.fa.fa-power-off
+                            | &nbsp; Déconnecter

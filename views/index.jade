@@ -1,6 +1,49 @@
 extends frontend/layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-      h2 test
+    div.intro-header
+        div.container
+            div.row
+                div.col-lg-12
+                    div.intro-message
+                        h1 République de Turélia
+                        h3 Terre d'Excellence
+                        hr.intro-divider
+                        ul.list-inline.intro-social-buttons
+                            li
+                                a.btn.btn-default.btn-lg(href="#")
+                                    i.fa.fa-twitter.fa-fw
+                                    span.network-name Twitter
+                            li
+                                a.btn.btn-default.btn-lg(href="#")
+                                    i.fa.fa-facebook.fa-fw
+                                    span.network-name Facebook
+    div.content-section-a
+        div.container
+            div.row
+                div.col-lg-5.col-sm-6
+                    hr.section-heading-spacer
+                    div.clearfix
+                    h2.section-heading Présentation de la Micronation
+                    p.lead.
+                        Turélia est un pays virtuel n'existant que sur Internet. Il s'agit d'un jeu de rôle où vous
+                        pouvez incarner le(s) personnage(s) que vous souhaitez.
+                    a.btn.btn-primary.btn-lg(href="/about")
+                        i.fa.fa-info-circle.fa-fw
+                        | &nbsp;En savoir plus
+                div.col-lg-5.col-lg-offset-2.col-sm-6
+
+    div.content-section-b
+        div.container
+            div.row
+                div.col-lg-5.col-lg-offset-1.col-sm-push-6.col-sm-6
+                    hr.section-heading-spacer
+                    div.clearfix
+                    h2.section-heading Devenir Citoyen
+                    p.lead.
+                        Notre pays autorise actuellement l'immigration, alors n'attendez plus, et devenez citoyen
+                        de Turélia.
+                    a.btn.btn-primary.btn-lg(href="/user/new")
+                        i.fa.fa-pencil-square-o.fa-fw
+                        | &nbsp;S'inscrire
+                div.col-lg-5.col-sm-push-6.col-sm-6

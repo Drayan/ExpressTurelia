@@ -1,0 +1,21 @@
+doctype html
+html(lang="fr")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="description", content="Le site officiel de la République de Turélia.")
+        meta(name="author", content="TurelianGov")
+
+        title #{title}
+
+        link(rel="stylesheet", href="/stylesheets/bootstrap.css")
+        link(rel="stylesheet", href="/stylesheets/back_theme.css")
+        link(rel="stylesheet", href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css")
+
+    body
+        include header
+        block content
+        include footer
+
+        script(src="/javascripts/jquery-1.11.0.js")
+        script(src="/javascripts/bootstrap.js")
