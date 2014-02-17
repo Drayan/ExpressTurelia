@@ -11,6 +11,7 @@
     "mongodb": "*",
     "mongoose": "*",
     "mongoose-unique-validator": "*",
-    "underscore": "*"
+    "underscore": "*",
+    "browserify": "*"
   }
 }

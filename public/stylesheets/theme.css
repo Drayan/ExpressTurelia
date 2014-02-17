@@ -295,17 +295,17 @@ p.copyright {
 }
 
 .sidebar-sidenav .nav {
-     display: none;
+     display: block;
      margin-bottom: 8px;
  }
 
 .sidebar-sidenav .nav .nav {
-    display: none;
+    display: block;
     margin-bottom: 8px;
 }
 
 .sidebar-sidenav .nav .nav .nav {
-    display: none;
+    display: block;
     margin-bottom: 8px;
 }
 
@@ -328,6 +328,10 @@ p.copyright {
     padding-bottom: 3px;
     padding-left: 70px;
     font-size: 70%;
+}
+
+.affix {
+    position: inherit;
 }
 
 @media (min-width: 992px) {

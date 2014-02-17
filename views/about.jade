@@ -1,0 +1,150 @@
+extends frontend/layout
+block content
+    div.doc-header
+        div.container
+            h1 Présentation de Turélia
+
+    div.container(style="margin-top: 50px;")
+        div.row
+            div.col-md-3
+                div.sidebar.hidden-print(role="complementary")
+                    ul.nav.sidebar-sidenav
+                        li.active
+                            a(href="#overview") Aperçu
+                            ul.nav
+                                li.active
+                                    a(href="#overview-micronation") Micronation
+                                li
+                                    a(href="#overview-turelian") Turélian
+                                li
+                                    a(href="#overview-baravens") Baravens
+
+                        li
+                            a(href="#history") Histoire
+                            ul.nav
+                                li
+                                    a(href="#history-genese") Genèse
+                                li
+                                    a(href="#history-firstkingdom") Le premier Royaume
+                                li
+                                    a(href="#history-tilavin") La fondation de l'Église Tilavin
+                                li
+                                    a(href="#history-falloffirstkingdom") La chute du premier Royaume
+                                li
+                                    a(href="#history-tilavindogma") Le dogme de l'Église Tilavin
+                                li
+                                    a(href="#history-revolution") La révolte
+                                li
+                                    a(href="#history-firstrepublic-constitution") La fondation de la première République
+                                li
+                                    a(href="#history-whatnext") Que nous réserve l'avenir ?
+
+                        li
+                            a(href="#geography") Géographie
+                            ul.nav
+                                li
+                                    a(href="#geography-asengar") Asengar
+                                    ul.nav
+                                        li
+                                            a(href="#geography-asengar-data") Aperçu
+                                        li
+                                            a(href="#geography-asengar-baravens") Les Baravens
+                                            ul.nav
+                                                li
+                                                    a(href="#geography-asengar-baravens-alrun") Alrun
+                                                li
+                                                    a(href="#geography-asengar-baravens-havard") Havard
+                                                li
+                                                    a(href="#geography-asengar-baravens-thorkel") Thorkel
+                                                li
+                                                    a(href="#geography-asengar-baravens-valagern") Valagern
+
+            div.col-md-9
+                div.page-header
+                    h1#overview Aperçu
+                    hr
+                    h3#overview-micronation Micronation
+                    p
+                        | La
+                        i République de Turélia
+                        | est une micronation. Il existe plusieurs sorte de micronation. Certaine très sérieuse,
+                        | qui ont un territoire réel et qui souhaite se faire reconnaitre comme état légitime par
+                        | l'ONU. D'autre, comme la nôtre ont d'autres pretensions.
+
+                    p
+                        | Nous aimons parler de
+                        i Turélia
+                        | comme étant une simulation politico-socio-économique. Ainsi, nous pouvons mettre en
+                        | pratique des idées qui serait très difficile de faire accepter dans la réalité.
+
+                    p
+                        i Turélia
+                        | est donc un jeu, car l'un de ses objectifs est de se divertir. Mais est aussi une simulation,
+                        |car prenons très à coeur ce que nous y faisons. Et nous nous y appliquons.
+
+                    p
+                        | Peut-être qu'un jour notre nation 'virtuelle" pourra devenir réelle, mais pour le moment,
+                        | ce n'est pas à l'ordre du jour !
+                        i.fa.fa-smile-o
+
+                    h3#overview-turelian Turélian
+                    p
+                        | Bien que le Français et l'Anglais soient des langues reconnues par l'état. Nous avons aussi
+                        | notre propre langage :
+                        i le Turélian
+
+                    h3#overview-baravens Baravens
+                    p
+                        | Baravens est un mot Turélian, il peut se traduire par "province" en français. En tant que tel,
+                        | elles disposent d'un certain niveau d'autonomie. Chaque baravens à un Gouverneur, nommé par
+                        | le Président, et qui sont chargé de parler en son nom. Les baravens sont pour le moment au
+                        | nombres de 4 dans la République :
+                    ul(style="font-weight: 400;")
+                        li Alrun
+                        li Havard
+                        li Throkel
+                        li Valagern
+
+                    p Vous pourrez trouver plus d'informations sur chacunes d'entre-elles dans la section qui leur est
+                    | consacrée.
+
+                    h1#history Histoire
+                    hr
+                    h3#history-genese La genèse de Turélia
+                    p
+                        | A l'origine, le territoire de l'actuel Asengar était peuplé par des clans. Ceux-ci étaient en
+                        | guerre perpetuelle. Les escarmouches étaient très fréquente. A tel point qu'il était impenssable
+                        | de quitter le territoire de son clan sans se faire attaquer par les autres.
+                    p
+                        | Dans ce contexte difficile, personne n'imaginait qu'il soit possible un jour d'unir sous un même
+                        | banière. C'était pourtant le rêve d'un homme,
+                        i Sokan Umer
+                        | . Le chef du clan Asengarii. Il tenta par bien des moyens d'arriver à ses fins, mais la tâche
+                        | semblait infinie. C'est alors qu'un soir, en rentrant d'un raid sur un clan voisin. Sokan entendit
+                        | un grondement sourd battre l'air au-dessus de lui. Il regarda par dessus son épaule et vit
+                        | l'abomination.
+
+                    p Un dragon. Énorme. Fillait dans le ciel à toute allure en direction de Sokan et de sa tribu. [...]
+                    p La destruction d'Asengar. [...]
+                    p Le désespoir. [...]
+                    p L'unification. [...]
+                    p La défaite des dragons. [...]
+                    p La victoire d'Asengar. [...]
+
+                    h3#history-firstkingdom Le premier Royaume
+                    h3#history-tilavin La création de l'Église Tilavin
+                    h3#history-falloffirstkingdom La chute du premier Royaume
+                    h3#history-tilavindogma Le dogme de l'Église Tilavin
+                    h3#history-revolution La révolte
+                    h3#history-firstrepublic-constitution Les fondements de la première République
+                    h3#history-whatnext Que nous réserve l'avenir ?
+
+                    h1#geography Geographie
+                    hr
+                    h3#geography-asengar L'Asengar
+                    h4#geography-asengar-data Aperçu
+                    h4#geography-asengar-baravens Les Baravens
+                    h5#geography-asengar-baravens-alrun Alrun
+                    h5#geography-asengar-baravens-havard Havard
+                    h5#geography-asengar-baravens-throkel Thorkel
+                    h5#geography-asengar-baravens-valagern Valagern

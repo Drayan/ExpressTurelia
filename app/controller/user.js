@@ -49,6 +49,8 @@ module.exports = {
                     if(err.name && err.name == "ValidationError") {
                         //TODO: Make a better way to handle ValidationError.
                         res.send(500, "Validation errors : " + JSON.stringify(err.errors));
+                    } else {
+                        res.send(500, "Server error : " + err);
                     }
                 } else {
                     res.send(200, 'Default user created');

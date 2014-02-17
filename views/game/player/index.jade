@@ -3,30 +3,45 @@
 extends ../layout
 
 block content
-    div#page-wrapper
+    div.page-wrapper#pageLoading
+        div.row(style="margin-top: 225px;")
+            div.col-lg-offset-3.col-lg-6.text-center
+                h2 Chargement en cours...
+        div.row
+            div.col-lg-offset-3.col-lg-6.progress.progress-striped.active
+                div.progress-bar#loadingBar(role="progressbar", aria-valuenow="0", aria-valuemin="0", aria-valuemax="100")
+        div.row
+            div.col-lg-offset-3.col-lg-3.text-center
+                h4
+                    i#loadingWhat
+            div.col-lg-3.text-center
+                h4#loadingPercent 0 %
+
+    div.page-wrapper#pageCharacters(style="display: none;")
         div.row
             div.col-lg-12
                 h1 Personnages
-                    small Aperçu
+                    small &nbsp;Aperçu
                 ol.breadcrumb
                     li.active
                         i.fa.fa-user
-                    | &nbsp;Personnages
+                    | &nbsp;Personnages > Liste
+
+            div#charactersOverview
+
+    div.page-wrapper#pageNewCharacter(style="display: none;")
+        div.row
+            div.col-lg-12
+                h1 Personnages
+                    small &nbsp;Nouveau personnage
+                ol.breadcrumb
+                    li.active
+                        i.fa.fa-user
+                    | &nbsp;Personnages > Nouveau personnage
 
         div.row
-
-            div.col-lg-3
-                div.panel.panel-info
-                    div.panel-heading
-                        div.row
-                            div.col-xs-12.text-center
-                                h3 [CHARACTER 1]
-                        div.row
-                            div.col-xs-12.text-center
-                                img.avatar(src="/images/default-avatar.png", alt="default avatar")
-                    a(href="#")
-                        div.panel-footer.announcement-bottom
-                            div.row
-                                div.col-xs-6 Voir le profile
-                                div.col-xs-6.text-right
-                                    i.fa.fa-arrow-circle-right
+            form.form-horizontal(role='form')
+                div.form-group
+                    label.col-lg-offset-2.col-lg-2(for='inputCharName') Nom de famille
+                    div.col-lg-6
+                        input.form-control#inputCharName(placeholder="Nom de famille", type="text")
